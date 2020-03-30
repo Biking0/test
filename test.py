@@ -30,7 +30,7 @@ stamptime_15 = time.mktime(time.strptime(today_str + ' 15:00:00', '%Y-%m-%d %H:%
 stamptime_now=time.time()
 
 # 是否到当天15点以后
-print stamptime_15
-print stamptime_now
+#print stamptime_15
+#print stamptime_now
 
 
