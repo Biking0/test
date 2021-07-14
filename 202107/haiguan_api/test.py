@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+import time
+import get_data
 
 app = FastAPI()
 
@@ -8,6 +10,11 @@ def read_root(name):
     return {"Hello": "World" + name}
 
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: str = None,start: str=None,end: str=None):
-    return {"item_id": item_id, "q": q,"start":start,"end":end}
+@app.get("/get_data/")
+def read_item(start: str = None, end: str = None, id: str = None, ):
+    # time.sleep(3)
+    # time.sleep(3)
+
+    # get_data.get_token()
+
+    return get_data.get_token()
